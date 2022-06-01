@@ -18,5 +18,22 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+  },
+  overrides: [
+    {
+      files: [
+        'src/views/index.vue',
+        'src/views/**/index.vue'
+      ],
+      rules: {
+        'vue/multi-word-component-names': 'off'
+      }
+    }
+  ],
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly'
   }
 }
