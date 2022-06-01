@@ -1,3 +1,6 @@
+## 创建项目
+> npm create vite@latest
+
 ## 目录结构
 .
 ├── public                  # 不需要打包的静态资源
@@ -26,3 +29,10 @@
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+
+## eslint 安装
+
+* npm install eslint --save-dev
+* npx eslint --init
+* 配置 .eslintrc.js 文件 修改 'plugin:vue/vue3-strongly-recommended',
+* 添加脚本 "lint": "eslint src/**/*.{js,jsx,vue,ts,tsx} --fix",

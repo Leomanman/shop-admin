@@ -18,11 +18,5 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-  },
-  globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly'
   }
 }
